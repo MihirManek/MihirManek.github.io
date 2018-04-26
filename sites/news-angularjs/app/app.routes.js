@@ -6,11 +6,11 @@ angular.module('app.routes',['ngRoute'])
 function config ($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl : "app/home/_home.html",
+            templateUrl : "app/home/home.html",
             controller : "HomeController"
         })
         .when("/category/:category?/:page?",{
-            templateUrl : "app/category/_category.html",
+            templateUrl : "app/category/category.html",
             controller : "CategoryController"
         })
         .otherwise({redirectTo:'/'});
